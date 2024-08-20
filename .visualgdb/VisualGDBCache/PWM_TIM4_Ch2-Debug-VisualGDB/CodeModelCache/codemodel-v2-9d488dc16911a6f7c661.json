@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-DEBUG-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "DEBUG",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "PWM_TIM4_Ch2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BSP::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BSP-DEBUG-c0416870ea6c630cf3dd.json",
+					"name" : "BSP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PWM_TIM4_Ch2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PWM_TIM4_Ch2-DEBUG-adb3b5e22855b17b2d11.json",
+					"name" : "PWM_TIM4_Ch2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PWM_TIM4_Ch2-bin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PWM_TIM4_Ch2-bin-DEBUG-393e988c4f7b149a3d7d.json",
+					"name" : "PWM_TIM4_Ch2-bin",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/PWM_TIM4_Ch2/build/VisualGDB/Debug",
+		"source" : "E:/PWM_TIM4_Ch2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
