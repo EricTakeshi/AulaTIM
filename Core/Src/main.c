@@ -43,6 +43,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+uint32_t delta = 5000;
 
 /* USER CODE END PV */
 
@@ -87,7 +88,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_Base_Start_IT(&htim2);
+  HAL_TIM_OC_Start_IT(&htim2, TIM_CHANNEL_1);
 
   /* USER CODE END 2 */
 
@@ -148,9 +149,10 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-	HAL_GPIO_TogglePin(OrangeLed_GPIO_Port, OrangeLed_Pin);
+void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
+{	
+	__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, __HAL_TIM_GET_COMPARE(htim, TIM_CHANNEL_1)+ delta);
+	HAL_GPIO_TogglePin(OrangeLed_GPIO_Port, OrangeLed_Pin);				
 }
 /* USER CODE END 4 */
 
