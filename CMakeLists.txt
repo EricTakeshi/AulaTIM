@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.15)
 
 project(PWM_TIM4_Ch2 LANGUAGES C CXX ASM)
 
-find_bsp(ID com.sysprogs.project_importers.stm32.cubemx SOURCE_PROJECT PWM_TIM4_Ch2.ioc)
+find_bsp(
+	ID com.sysprogs.project_importers.stm32.cubemx
+	SOURCE_PROJECT PWM_TIM4_Ch2.ioc
+	HWREGISTER_LIST_FILE STM32F407.mcudef)
 
 bsp_include_directories(.)
 add_bsp_based_executable(

@@ -30,7 +30,13 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+typedef enum 
+{
+	_off = 0,
+	_low,
+	_mid,
+	_high
+}typeFlashLightState;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -52,7 +58,7 @@ uint32_t delta = 5000;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+typeFlashLightState flashlight_state = _off;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -88,9 +94,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_TIM2_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_OC_Start_IT(&htim2, TIM_CHANNEL_1);
+	
+	HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
+	sbot bluebot;
+	edge_detect_init(&bluebot, Blue_Bot_GPIO_Port, Blue_Bot_Pin, rise, 100);
+	
 
   /* USER CODE END 2 */
 
@@ -101,6 +111,42 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  
+	  switch (flashlight_state)
+	  {
+	  case _off:
+		  if (is_Rise_Edge(&bluebot))
+		  {
+			  __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, 40);	  
+			  flashlight_state = _low;
+		  }
+		  break;
+	  case _low:
+		  if (is_Rise_Edge(&bluebot))
+		  {
+			  __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, 100);
+			  flashlight_state = _mid;
+		  }
+		  break;
+	  case _mid:
+		  if (is_Rise_Edge(&bluebot))
+		  {
+			  __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, 200);
+			  flashlight_state = _high;
+		  }
+		  break;
+	  case _high:
+		  if (is_Rise_Edge(&bluebot))
+		  {
+			  __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, 0);
+			  flashlight_state = _off;
+		  }
+		  break;
+	  default:
+		  break;
+	  }
+	  
+	 
   }
   /* USER CODE END 3 */
 }
@@ -151,11 +197,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
-{	
-	__HAL_TIM_SET_COMPARE(htim, TIM_CHANNEL_1, __HAL_TIM_GET_COMPARE(htim, TIM_CHANNEL_1)+ delta);
-	HAL_GPIO_TogglePin(OrangeLed_GPIO_Port, OrangeLed_Pin);				
-}
+
 /* USER CODE END 4 */
 
 /**
