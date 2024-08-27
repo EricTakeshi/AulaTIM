@@ -4,7 +4,10 @@ project(PWM_TIM4_Ch2 LANGUAGES C CXX ASM)
 
 find_bsp(ID com.sysprogs.project_importers.stm32.cubemx SOURCE_PROJECT PWM_TIM4_Ch2.ioc)
 
-add_bsp_based_executable(NAME PWM_TIM4_Ch2
+bsp_include_directories(.)
+add_bsp_based_executable(
+	NAME PWM_TIM4_Ch2
 	GENERATE_BIN
-	GENERATE_MAP)
+	GENERATE_MAP
+	SOURCES ${BSP_ROOT}/NonBlockFunctions.c ${BSP_ROOT}/NonBlockFunctions.h)
 
