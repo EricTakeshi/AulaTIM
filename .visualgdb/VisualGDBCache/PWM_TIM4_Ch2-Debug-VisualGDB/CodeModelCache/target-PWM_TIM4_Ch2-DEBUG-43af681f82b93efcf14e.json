@@ -128,23 +128,23 @@
 			[
 				{
 					"backtrace" : 9,
-					"path" : "E:/PWM_TIM4_Ch2/Core/Inc"
+					"path" : "C:/Users/Deel/source/repos/AulaTIM/Core/Inc"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "E:/PWM_TIM4_Ch2/Drivers/STM32F4xx_HAL_Driver/Inc"
+					"path" : "C:/Users/Deel/source/repos/AulaTIM/Drivers/STM32F4xx_HAL_Driver/Inc"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "E:/PWM_TIM4_Ch2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+					"path" : "C:/Users/Deel/source/repos/AulaTIM/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "E:/PWM_TIM4_Ch2/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+					"path" : "C:/Users/Deel/source/repos/AulaTIM/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "E:/PWM_TIM4_Ch2/Drivers/CMSIS/Include"
+					"path" : "C:/Users/Deel/source/repos/AulaTIM/Drivers/CMSIS/Include"
 				}
 			],
 			"language" : "C",
@@ -176,7 +176,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "-\"TE:/PWM_TIM4_Ch2/STM32F407VGTX_FLASH.ld\"",
+				"fragment" : "-\"TC:/Users/Deel/source/repos/AulaTIM/STM32F407VGTX_FLASH.ld\"",
 				"role" : "libraries"
 			},
 			{
@@ -214,7 +214,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "-\"TE:/PWM_TIM4_Ch2/STM32F407VGTX_FLASH.ld\""
+				"fragment" : "-\"TC:/Users/Deel/source/repos/AulaTIM/STM32F407VGTX_FLASH.ld\""
 			},
 			{
 				"backtrace" : 5,

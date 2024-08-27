@@ -1307,8 +1307,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "E:/PWM_TIM4_Ch2/build/VisualGDB/Debug",
-		"source" : "E:/PWM_TIM4_Ch2"
+		"build" : "C:/Users/Deel/source/repos/AulaTIM/build/VisualGDB/Debug",
+		"source" : "C:/Users/Deel/source/repos/AulaTIM"
 	},
 	"version" : 
 	{

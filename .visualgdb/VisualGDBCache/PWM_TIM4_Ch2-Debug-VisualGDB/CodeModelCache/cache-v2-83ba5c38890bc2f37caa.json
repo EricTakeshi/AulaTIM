@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/PWM_TIM4_Ch2/STM32F407VGTX_FLASH.ld"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM/STM32F407VGTX_FLASH.ld"
 		},
 		{
 			"name" : "BSP_ROOT",
@@ -47,7 +47,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/PWM_TIM4_Ch2"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -243,7 +243,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/PWM_TIM4_Ch2/build/VisualGDB/Debug"
+			"value" : "c:/Users/Deel/source/repos/AulaTIM/build/VisualGDB/Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -719,7 +719,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/PWM_TIM4_Ch2/build/VisualGDB/Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM/build/VisualGDB/Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -779,7 +779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/PWM_TIM4_Ch2"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1287,7 +1287,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/PWM_TIM4_Ch2/build/VisualGDB/Debug/toolchain.cmake"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM/build/VisualGDB/Debug/toolchain.cmake"
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1363,7 +1363,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/PWM_TIM4_Ch2/build/VisualGDB/Debug"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM/build/VisualGDB/Debug"
 		},
 		{
 			"name" : "PWM_TIM4_Ch2_BSP_ALIAS",
@@ -1423,7 +1423,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/PWM_TIM4_Ch2/STM32F407VGTX_FLASH.ld"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM/STM32F407VGTX_FLASH.ld"
 		},
 		{
 			"name" : "PWM_TIM4_Ch2_SOURCE_DIR",
@@ -1435,7 +1435,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/PWM_TIM4_Ch2"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM"
 		},
 		{
 			"name" : "TOOLCHAIN_ROOT",
@@ -1459,7 +1459,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/PWM_TIM4_Ch2/PWM_TIM4_Ch2.ioc"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM/PWM_TIM4_Ch2.ioc"
 		},
 		{
 			"name" : "_BSP_CONFIGURATOR_ID",
@@ -1495,7 +1495,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/PWM_TIM4_Ch2/build/VisualGDB/Debug/BSP.cmake"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM/build/VisualGDB/Debug/BSP.cmake"
 		},
 		{
 			"name" : "_BSP_ID",
@@ -1543,7 +1543,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/PWM_TIM4_Ch2"
+			"value" : "C:/Users/Deel/source/repos/AulaTIM"
 		},
 		{
 			"name" : "_BSP_VERSION",
